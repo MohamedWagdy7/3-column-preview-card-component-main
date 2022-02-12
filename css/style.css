@@ -3,25 +3,29 @@
     margin: 0%;
 }
 body{
+display:flex;
+align-items: center;
+justify-content: center;
+width: 100%; 
+min-height: 100vh;
 background-color: (0, 0%, 95%);
 }
 .padding-class{
     padding: 3% 6% 6% 6%;
 }
 main{
+    overflow: hidden;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 70%;
-    margin: 6% auto 0 auto;
 }
 .one{
     background-color: hsl(31, 77%, 52%);
     border-radius: 1rem 0 0 1rem;
-
 }
 p{
-    line-height: 25px;
+    line-height: 2.5;
     color: hsla(0, 0%, 100%, 0.75);
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
@@ -38,8 +42,7 @@ h2{
 }
 .three{
     background-color: hsl(179, 100%, 13%);
-    border-radius: 1rem 0 0 1rem;
-
+    border-radius: 0 1rem 1rem 0;
 }
 a{
     display: flex;
@@ -78,4 +81,17 @@ a{
         width: 60%;
         height: 80%;
     }
+}
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+		clip-path: inset(50%) !important; 
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;            
 }
